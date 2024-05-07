@@ -28,3 +28,19 @@ const arrowRight = document.querySelector(".arrow_right");
 arrowRight.addEventListener("click", function() {
 	console.log("Clic de la flèche de droite fonctionne")
 });
+
+
+
+// Création bullet points
+const dotsSlides = document.querySelector(".dots");
+
+for (let i = 0; i < slides.length; i++) {
+	let dot = document.createElement('div')
+	dot.classList.add("dot")
+	dotsSlides.appendChild(dot);
+}
+let count = 0;
+
+let dotSelected = document.querySelectorAll(".dot");
+
+dotSelected[count].classList.add("dot_selected");
